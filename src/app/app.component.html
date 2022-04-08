@@ -1,7 +1,7 @@
 <router-outlet>
   <div>
-    <button (click)="setBlock()">Add</button>
-    <button (click)="sortCard()">Sort</button>
+    <button class="addDelete" (click)="setBlock()">Add</button>
+    <button class="addDelete" (click)="sortCard()">Sort</button>
     <div *ngFor="let object of block">
       <div class="container">
         <button class="delete" (click)="deleteCard(object.id)">X</button>
